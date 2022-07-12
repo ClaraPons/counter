@@ -23,9 +23,16 @@ class App extends React.Component {
   }
 
   handleClickMax = (e) => {
+   if(this.state.countOne < this.state.countTwo){
     this.setState({
       countOne: this.state.countOne + 1
     })
+  }else if(this.state.countOne === this.state.countTwo){
+    this.setState({
+      countOne: this.state.countOne + 1,
+      countTwo: this.state.countTwo + 1
+    })
+  }
 }
 
 handleClickMin2 = (e) => {
@@ -34,7 +41,13 @@ handleClickMin2 = (e) => {
     this.setState({
       countTwo: this.state.countTwo - 1
   })
-}
+ if(this.state.countTwo === this.state.countOne){
+  this.setState({
+    countOne: this.state.countOne - 1,
+    countTwo: this.state.countTwo - 1
+    })
+    }
+  }
 }
 
 handleClickMax2 = (e) => {
