@@ -7,16 +7,26 @@
   pointer-events: none;
 }
 
-h1 {
+h2 {
   text-align: center;
   color:cadetblue;
   font-size: 40px;
 }
 
 .counterGlobal{
+  display: flex;
+}
+
+.counter1{
   border: 1px solid cadetblue;
   width: 300px;
-  margin: 20px;
+  margin: 10px;
+}
+
+.counter2{
+  border: 1px solid cadetblue;
+  width: 300px;
+  margin: 10px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

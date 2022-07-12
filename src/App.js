@@ -63,17 +63,22 @@ handleClickMax2 = (e) => {
     render() {
       return (
         <div className="counterGlobal">
-          <h1>Counter</h1>
+          <div className="counter1">
+          <h2>Counter</h2>
           <Counter
           count = {this.state.countOne}
           increment = {this.handleClickMax}
           substract = {this.handleClickMin}
           />
+          </div>
+          <div className="counter2">
+          <h2>Counter 2</h2>
            <Counter
           count = {this.state.countTwo}
           increment = {this.handleClickMax2}
           substract = {this.handleClickMin2}
           />
+        </div>
         </div>
       )
     }
