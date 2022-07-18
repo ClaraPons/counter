@@ -19,7 +19,7 @@ button{
     gap: 40px;
 }
 
-h2{
+.counterContainer h2{
     color:cadetblue;
     font-size: 50px;
 }
